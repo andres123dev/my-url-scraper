@@ -1,17 +1,16 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""
+
 __name__ =        "functions"
 __description__ = "Functions to handle the interactive console application."
-__date__ =        "14-06-2022"
 __author__ =      "Andrés Fernández Burón"
 __copyright__ =   "Copyright 2022-2023"
 __license__ =     "All rights reserved"
+__date__ =        "14-06-2022"
 __version__ =     "0.1"
 __status__ =      "Production"
 __maintainer__ =  "Andrés Fernández Burón"
 __email__ =       "https://github.com/AndresFernandezBuron/scrape-uri/issues/new/choose"
-"""
 
 import re
 
