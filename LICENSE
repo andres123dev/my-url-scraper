@@ -3,9 +3,13 @@ Andres Fernandez Buron
 
 Copyright (C) All rights reserved
 
-my-url-scraper
 My URL scraper
+my-url-scraper
 
 Interactive console app to scrape and analyze the response for a request to an URL.
 
 Wrote with Python 3.
+
+Disclaimer:
+- No guarantees are offered
+- No responsabilities taken
