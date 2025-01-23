@@ -2,29 +2,21 @@
   
 <table align="center">
 <tbody>
-    <tr>
-        <th>Proyect</th>
-        <td>my-url-scraper</td>
-    </tr>
-    <tr>
+    <tr> <th>Proyect</th> <td>My URL scraper</td> </tr> <tr>
         <th>Description</th>
-		<td>Interactive terminal app to make a HTTP request to an URL and analyze the response.</td>
+	<td>Terminal app to make a HTTP request to an URL and analyze the response interactively.</td>
     </tr>
-	<tr>
-		<th>Author</th>
-		<td>Andrés Fernández Burón</td>
-	</tr>
-	<tr>
-		<th>Copyright</th>
-		<td>2022-2025 &copy; All rights reserved</td>
-	</tr>
-</tbody>
-</table>
+      <tr> <th>Author</th> <td>Andrés Fernández Burón</td> </tr>
+      <tr> <th>Copyright</th> <td>2023-2025 &copy; All rights reserved</td> </tr>
+    </tbody>
+  </table>
+</div>
 
 <hr>
 
-<div id="index" align="center">
-	<b>Language:</b> <a href="#index-es">Español</a> | <a href="#index-en">English</a>
+<div id="index" align="center">  
+
+**Language:** [Español](#index-es)   |   [English](#index-en)  
 </div>
 
 <hr>
@@ -33,22 +25,23 @@
 
 ## Índice
 
-- Descripción
-- Requisitos
-- Dependencias
-- Instalación
-- Ejemplos de uso
-- Compatibilidad
+1. [Descripcion](#descripcion)  
+2. [Requisitos](#requisitos)  
+3. [Dependencias](#dependencias)  
+4. [Descarga](#descarga)  
+5. [Instalacion](#instalacion)  
+6. [Ejemplos de uso](#ejemplos-de-uso)
+7. [Compatibilidad](#compatibilidad)  
 
 </div>
 
 <div id="readme-es">
 <hr>  
 
-## Descripción  
-<b>My URL scraper</b> es una aplicación de consola escrita con <a href="https://www.python.org/doc/" target="_blank">Python 3</a>, que permite realizar una petición HTTP a una URL y analizar la respuesta de forma interactiva.
+## Descripcion  
+<b>My URL scraper</b> es una aplicación de consola  que permite realizar una petición HTTP a una URL y analizar la respuesta de forma interactiva.
   
-<b>My URL scraper</b> te permite:
+<b>My URL scraper</b> permite:
 - Ver las cabeceras HTTP de la respuesta
 - Ver el contenido (texto) de la respuesta
 - Descargar el contenido de la respuesta
@@ -59,38 +52,55 @@ Si la respuesta es código HTML, también muestra la información básica del do
 - Buscar en el documento, un texto (case insensitive)
 
 ## Requisitos  
-<b>My URL scraper</b> requiere tener instalado <a href="https://www.python.org/downloads/" target="_blank">Python 3</a> y <a href="" target="_blank">Pip</a>.
+<b>My URL scraper</b> está escrito con [Python](https://www.python.org/doc/), y requiere tener instalado el lenguaje [Python 3](https://www.python.org/downloads/) y [Pip]().
+
   
 ## Dependencias  
 <b>My URL scraper</b> depende de los siguientes módulos Python de terceros:
 
-- <a href="https://requests.readthedocs.io/en/latest/" target="_blank">Requests</a>
-- <a href="https://www.crummy.com/software/BeautifulSoup/bs4/doc/" target="_blank">BeautifulSoup4</a>
-- <a href="https://lxml.de/index.html#documentation" target="_blank">lxml</a>
+- [Requests](https://requests.readthedocs.io/en/latest/)  
+- [BeautifulSoup4](https://www.crummy.com/software/BeautifulSoup/bs4/doc/)  
+- [lxml](https://lxml.de/index.html#documentation)  
+- [ReportLab]()  
 
-Instalar las dependencias manualmente con Pip:  
-<code> pip install request, bs4, reportlab </code>  
-
-Instalar las dependencias desde requirements.txt:  
-<code> pip install -r requiremnts.txt </code>
+ Si no sabes instalar las dependencias, consulta este [manual](https://github.com/andres123dev/Apuntes-AndresFB/blob/main/python/pip.md#instalar-módulos-desde-requirementstxt).  
   
-## Instalación  
-<b>My URL scraper</b> no necesita instalación.  
+## Descarga
+Puedes descargar <b>My URL scraper</b> mediante una aplicación cliente cómo ````GitBash````. 
+
+También puedes descargarlo cómo fichero ZIP  [my-url-scraper-main.zip](https://github.com/andres123dev/my-url-scraper/archive/refs/heads/main.zip)
+
+> Si tienes alguna duda, consulta este [manual](https://github.com/andres123dev/Apuntes-AndresFB/blob/main/github/descargar-repositorio.md).  
+
+## Instalacion  
+<b>My URL scraper</b> no necesita instalación y se ejecuta igual que cualquier otro script de Python.  
+
+> Para ejecutar el script abre una terminal   
+> y pásale al intérprete de Python,  
+> la ruta al fichero ```__main__.py```  
+> que se encuentra en la raíz del repositorio.  
+
+1 - Me ubico en el directorio que contiene el repositorio:  
+```cd ~\Downloads\my-url-scraper-main```  
+
+2- <b>Si es necesario</b>, renombro el directorio del repositorio:  
+```mv my-url-scraper-main my-url-scraper```  
+
+3- Ejecuto el script  
+```python my-url-scraper```  
   
 ## Ejemplos de uso
-<b>My URL scraper</b> se ejecuta cómo cualquier script de Python 3.  
+<b>My URL scraper</b> recibe un parámetro obligatorio: la ````URL```` a scrapear.  
 
-Recibe un parámetro obligatorio: la URL a scrapear.  
-  
-Ejemplos de uso:  
+```py my-url-scraper paginaweb.com```  
 
-<code> python my-url-scraper paginaweb.com </code>  
-<code> python my-url-scraper http://paginaweb.com </code>  
+```py my-url-scraper http://paginaweb.com/```  
 
-<code> python my-url-scraper https://paginaweb.com/ </code>  
-<code> python my-url-scraper https://www.paginaweb.com/ </code>  
+```py my-url-scraper https://paginaweb.com```  
 
-<code> python my-url-scraper webpage.com/path?param1=val1&param2=val2 </code>  
+```py my-url-scraper https://paginaweb.com/```  
+
+```py my-url-scraper paginaweb.com/path?param1=val1&param2=val2```  
   
 ## Compatibilidad
 <b>My URL scraper</b> es una aplicación de consola multiplataforma.
@@ -112,66 +122,77 @@ Ejemplos de uso:
 <div id="index-en">
 <hr>
 
-## Index
-
-- Description
-- Requirements
-- Dependencies
-- Installation
-- Examples of usage
-- Compatibility
+## Index  
+  
+1. [Description](#description)   
+2. [Requirements](#requirements)  
+3. [Dependencies](#dependencies)  
+4. [Installation](#installation)  
+5. [Usage](#usage)  
+6. [Compatibility](#compatibility)  
 
 </div>
 
 <div id="readme-en">
 
 ## Description
-<b>My URL scraper</b> is a terminal app wrote with <a href="https://www.python.org/downloads/" target="_blank">Python 3</a>, to make a HTTP request to an URL and to analyze the response.  
+<b>My URL scraper</b> is a terminal app to make a HTTP request to an URL and to analyze the response.  
   
-<b>My URL scraper</b> allows you to:
+<b>My URL scraper</b> allows to:
 - Display the HTTP headers of the response
 - Display the text content of the response
 - Download the content of the response
   
-If the response is HTML code, it also displays basic information about the document, and allows you to:
+Moreover, if the response is HTML code, it also displays basic information about the document, and allows you to:
 - Search for a HTML tag on the DOM
 - Search for a text on the text of the webpage (case sensitive)
 - Search for a text on the document (case insensitive)
 
 ## Requirements
-<b>My URL scraper</b> requires to have intalled <a href="https://www.python.org/downloads/" target="_blank">Python 3</a> and <a href="">Pip</a>.
+<b>My URL scraper</b> is wrote with [Python 3](https://www.python.org/downloads/), so requires to have installed [Python 3](https://www.python.org/downloads/) language and [Pip]().
   
 ## Dependencies
 
-<b>My URL scraper</b> depends on the following Python third party modules:
+<b>My URL scraper</b> depends on the following Python third-party modules:
 
-- <a href="https://requests.readthedocs.io/en/latest/" target="_blank">requests</a>
-- <a href="https://www.crummy.com/software/BeautifulSoup/bs4/doc/" target="_blank">bs4</a>
-- <a href="https://lxml.de/index.html#documentation">lxml</a>
+- [Requests](https://requests.readthedocs.io/en/latest/)
+- [BeautifulSoup4](https://www.crummy.com/software/BeautifulSoup/bs4/doc/)
+- [lxml](https://lxml.de/index.html#documentation)
+- [ReportLab]()
 
-Install the dependencies manually with Pip:  
-<code> pip install request, bs4, reportlab </code>  
-
-Or install all dependencies from requirements.txt:  
-<code> pip install -r requirements.txt </code>  
+> Install with Pip all the dependencies from requirements.txt  
+````pip install -r requirements.txt````  
   
 ## Installation
-<b>My URL scraper</b> doesn't need installation.  
+<b>My URL scraper</b> doesn't need installation and runs like any other Python 3 script.  
+
+> To run <b>My URL scraper</b> application, open a terminal  
+> and give to the Python interpreter,  
+> the path to the ```__main__.py``` file.   
+
+1 - Go to the repository directory:  
+```cd ~\Downloads\my-url-scraper-main```  
+
+If is neccesary, rename the directory of the repository:  
+```mv my-url-scraper-main my-url-scraper```  
+
+3- Run the application  
+```python my-url-scraper```  
 
 ## Usage
-<b>My URL scraper</b> runs like any other Python 3 script.  
+<b>My URL scraper</b> expects a required and unique parameter: the ````URL```` to scrape.  
 
-It expects a single required parameter: the URL to scrape.  
+Examples of use:
 
-Usage example:  
+```py my-url-scraper website.com```  
 
-<code> python my-url-scraper webpage.com</code>  
-<code> python my-url-scraper http://webpage.com</code>  
+```py my-url-scraper http://website.com/```  
 
-<code> python my-url-scraper https://www.webpage.com/</code>  
-<code> python my-url-scraper https://webpage.com/</code>  
+```py my-url-scraper https://website.com```  
 
-<code> python my-url-scraper webpage.com/path?param1=val1&param2=val2</code>  
+```py my-url-scraper https://website.com/```  
+
+```py my-url-scraper website.com/path?param1=val1&param2=val2```  
 
   
 ## Compatibility
